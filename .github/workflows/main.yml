@@ -23,5 +23,4 @@ jobs:
           pip install nbconvert
 
       - name: Run python Script
-        run: Python
-          txf_nearby周合約k圖_gspread_github_修改中v02_1140114.py
+        run: txf_nearby周合約k圖_gspread_github_修改中v02_1140114.py
