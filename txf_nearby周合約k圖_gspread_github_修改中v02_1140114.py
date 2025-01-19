@@ -191,7 +191,7 @@ for index, row in new_df.iterrows():
         # You can assign default values, skip the row, or raise a custom exception
         # For example, to assign NaN values:
         # new_df.loc[index, ['最高', '最低', '開盤', '收盤']] = float('nan')
-display(new_df)
+#display(new_df)
 
 # Add new columns to new_df
 new_df['span'] = 0  # Initialize with 0
