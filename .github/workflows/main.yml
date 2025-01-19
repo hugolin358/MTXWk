@@ -17,10 +17,11 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Install Dependencies
+      - name: Upgrade pip and Install Dependencies
         run: |
+          pip install --upgrade pip
           pip install -r requirements.txt
           pip install nbconvert
 
       - name: Run python Script
-        run: txf_nearby周合約k圖_gspread_github_修改中v02_1140114.py
+        run: python txf_nearby周合約k圖_gspread_github_修改中v02_1140114.py
