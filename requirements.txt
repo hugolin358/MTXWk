@@ -1,0 +1,6 @@
+
+finmind
+pandas
+numpy
+matplotlib
+nbconvert
