@@ -231,7 +231,7 @@ new_df2
 """Transfer dataframe to google sheet"""
 
 # Install necessary libraries
-!pip install --upgrade gspread pandas gspread_dataframe
+#!pip install --upgrade gspread pandas gspread_dataframe
 
 """API key.json store in drive and shareed for downloading to Colad VM temperially by url, which doesn't go through drive authentication"""
 
