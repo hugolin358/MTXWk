@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1mkEW8XJz8kb1mYxld7PCs52WhZbvFS6u
 """
 
-!pip install finmind
+#!pip install finmind
 
 from FinMind.data import DataLoader
 
