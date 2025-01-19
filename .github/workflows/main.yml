@@ -16,12 +16,14 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
-
+       
       - name: Upgrade pip and Install Dependencies
         run: |
           pip install --upgrade pip
           pip install -r requirements.txt
           pip install nbconvert
-
+      - name: Install tqdm
+         run:|
+         pip install tqdm
       - name: Run python Script
         run: python txf_nearby周合約k圖_gspread_github_修改中v02_1140114.py
