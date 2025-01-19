@@ -1,9 +1,12 @@
-name: Run Notebook
+name: Run Notebook scripts
 
 on:
   push:
     branches:
       - main
+  schedule:
+    # Run daily at 8:00 UTC
+    - cron: '0 8 * * *'
 
 jobs:
   run-notebook:
