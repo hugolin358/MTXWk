@@ -22,6 +22,6 @@ jobs:
           pip install -r requirements.txt
           pip install nbconvert
 
-      - name: Run Jupyter Notebook
-        run: |
-          jupyter nbconvert --to notebook --execute txf_nearby周合約k圖_gspread_github_修改中v02_1140114.py
+      - name: Run python Script
+        run: Python
+          txf_nearby周合約k圖_gspread_github_修改中v02_1140114.py
