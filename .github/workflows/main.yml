@@ -30,8 +30,4 @@ jobs:
       - name: Run python Script
         run: python Mtxf_周合約_gspread_github_v02_1140114_完成.py
 
-      - name: Install dependencies
-        run: pip install requests
 
-      - name: Trigger GAS Web App
-        run: python trigger_gas.py
