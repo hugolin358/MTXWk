@@ -287,5 +287,5 @@ set_with_dataframe(worksheet, new_df2)
 from IPython.display import IFrame
 
 url = "https://script.google.com/macros/s/AKfycbxFLi4_yhfdsDGnEAYuqrj1aCbx8izUuWjtM-7pyQOnRUToiHfY6-e6FA3yQjKjCl47Cw/exec"
-IFrame(url, width=80, height=60)
+#IFrame(url, width=80, height=60)
 
