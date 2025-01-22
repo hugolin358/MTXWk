@@ -11,7 +11,7 @@ def trigger_gas_webapp():
         # Check the response status code
         if response.status_code == 200:
             print("Request successful!")
-            print("Response from GAS:", response.text)
+          
         else:
             print(f"Request failed with status code {response.status_code}")
     except Exception as e:
