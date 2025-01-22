@@ -282,9 +282,14 @@ worksheet.clear()
 # Write the DataFrame to the sheet
 set_with_dataframe(worksheet, new_df2)
 
-"""To trigger GAS web app to write data to 周 sheet of 關卡價"""
+"""To trigger GAS web app to write data to weekly sheet of 關卡價"""
 
 from IPython.display import IFrame
 
 url = "https://script.google.com/macros/s/AKfycbxFLi4_yhfdsDGnEAYuqrj1aCbx8izUuWjtM-7pyQOnRUToiHfY6-e6FA3yQjKjCl47Cw/exec"
+IFrame(url, width=80, height=60)
+
+"""To trigger GAS web app to write data from weekly sheet to 周 sheet to of 關卡價"""
+url="https://script.google.com/macros/s/AKfycbxFLi4_yhfdsDGnEAYuqrj1aCbx8izUuWjtM-7pyQOnRUToiHfY6-e6FA3yQjKjCl47Cw/exec"
+
 IFrame(url, width=80, height=60)
