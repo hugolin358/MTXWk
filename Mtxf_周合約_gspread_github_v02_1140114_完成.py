@@ -13,7 +13,7 @@ from FinMind.data import DataLoader
 
 dl = DataLoader()
 
-future_data = dl.taiwan_futures_daily(futures_id='MTX', start_date='2024-1-1')
+future_data = dl.taiwan_futures_daily(futures_id='TX', start_date='2024-1-1')
 
 """# 1. Download row data"""
 
