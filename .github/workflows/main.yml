@@ -27,8 +27,11 @@ jobs:
           pip install nbconvert
           pip install tqdm
          
-      - name: Run python Script
+      - name: Run First Python Script
         run: python Mtxf_周合約_gspread_github_v02_1140114_完成.py
+
+      - name: Run Second Python Script
+        run: python TX_月合約__gspread_v01_1140124.py
 
       - name: Install dependencies
         run: pip install requests
