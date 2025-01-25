@@ -191,7 +191,7 @@ for index, row in new_df.iterrows():
         # You can assign default values, skip the row, or raise a custom exception
         # For example, to assign NaN values:
         # new_df.loc[index, ['最高', '最低', '開盤', '收盤']] = float('nan')
-display(new_df)
+#display(new_df)
 
 """ 8. Build a Monthly contract table named new_df_Mth"""
 
@@ -241,7 +241,7 @@ for contract_name in new_df_Mth['合約名稱'].unique():
 # new_df_Mth['收盤日期'] = pd.to_datetime(new_df_Mth['收盤日期']).dt.strftime('%Y-%m-%d') # No longer needed as we already have the correct format
 
 # Display the new DataFrame
-display(new_df_Mth)
+#display(new_df_Mth)
 
 # Add new columns to new_df_Mth
 new_df_Mth['span'] = 0  # Initialize with 0
