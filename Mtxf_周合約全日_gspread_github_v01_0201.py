@@ -50,10 +50,6 @@ df = df[['date', 'futures_id', 'contract_date', 'open', 'max', 'min', 'close']] 
 # Display the new DataFrame
 df
 
-from google.colab import files
-
-df.to_csv('output.csv')
-files.download('output.csv')
 
 """2. Extract data for every Wednsday"""
 
