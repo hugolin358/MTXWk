@@ -39,13 +39,18 @@ df = df2.groupby('date').apply(lambda x: pd.Series({
     'open': x[x['trading_session'] == 'after_market']['open'].iloc[0] if any(x['trading_session'] == 'after_market') else None,
     'max': x['max'].max(),
     'min': x['min'].min(),
-    'close': x[x['trading_session'] == 'position']['close'].iloc[0] if any(x['trading_session'] == 'position') else None,
+    'close': (x[x['trading_session'] == 'after_market']['close'].iloc[0] 
+              if x.iloc[-1]['trading_session'] == 'after_market'
+              else x[x['trading_session'] == 'position']['close'].iloc[0] 
+              if any(x['trading_session'] == 'position') else None),
     'futures_id': x[x['trading_session'] == 'after_market']['futures_id'].iloc[0] if any(x['trading_session'] == 'after_market') else None,
     'contract_date': x[x['trading_session'] == 'after_market']['contract_date'].iloc[0] if any(x['trading_session'] == 'after_market') else None
-})).reset_index()
+},
+    
+), include_groups=False).reset_index()  # Add include_groups=False here
 
 # Reorder columns
-df = df[['date', 'futures_id', 'contract_date', 'open', 'max', 'min', 'close']]  # Specify desired column order
+df = df[['date', 'futures_id', 'contract_date', 'open', 'max', 'min', 'close']]
 
 # Display the new DataFrame
 df
