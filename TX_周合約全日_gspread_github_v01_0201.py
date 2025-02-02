@@ -11,7 +11,7 @@ Original file is located at
 
 from FinMind.data import DataLoader
 
-dl = DataLoader()mt
+dl = DataLoader()
 
 future_data = dl.taiwan_futures_daily(futures_id='TX', start_date='2024-1-1')
 
