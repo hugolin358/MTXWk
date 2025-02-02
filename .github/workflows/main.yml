@@ -28,13 +28,13 @@ jobs:
           pip install tqdm
          
       - name: Run First Python Script
-        run: python Mtxf_周合約_gspread_github_v02_1140114_完成.py
+        run: python TX_周合約_gspread_github_v02_1140114_完成.py
 
       - name: Run Second Python Script
         run: python TX_月合約__gspread_v01_1140124.py
 
       - name: Run Third Python Script
-        run: python Mtxf_周合約全日_gspread_github_v01_0201.py
+        run: python TX_周合約全日_gspread_github_v01_0201.py
 
       - name: Install dependencies
         run: pip install requests
