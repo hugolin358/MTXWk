@@ -5,8 +5,8 @@ on:
     branches:
       - main
   schedule:
-    # Run daily at 8:00 UTC
-    - cron: '0 8 * * *'
+    - cron: '0 8 * * *' # Run daily at 8:00 UTC
+    - cron: '0 22 * * *' # Run daily at 22:00 UTC
 
 jobs:
   run-notebook:
