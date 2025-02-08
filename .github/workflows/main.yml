@@ -31,10 +31,10 @@ jobs:
         run: python tx_futures_周合約k_gspread_v03_1140208完成.py
 
       - name: Run Second Python Script
-        run: python TX_月合約__gspread_v01_1140124.py
+        run: python tx_futures_周合約全日k_gspread__v02_1140208_完成.py
 
       - name: Run Third Python Script
-        run: python tx_futures_周合約全日k_gspread__v02_1140208_完成.py
+        run: python trigger_gas.py
 
       - name: Install dependencies
         run: pip install requests
