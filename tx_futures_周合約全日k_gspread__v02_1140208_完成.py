@@ -139,7 +139,7 @@ while i < len(df):  # Iterate through all rows
 contractExtract_data=wednesdays_data
 contractExtract_data
 
-from google.colab import files
+#from google.colab import files
 
 #df.to_csv('output.csv')
 #files.download('output.csv')
@@ -330,40 +330,3 @@ def trigger_gas_webapp():
 if __name__ == "__main__":
     trigger_gas_webapp()
 
-"""10. ploting"""
-
-import plotly.graph_objects as go
-
-
-
-# Assuming you have the 'new_df' DataFrame with the calculated values
-
-fig = go.Figure(data=[go.Candlestick(
-    x=new_df['開倉日期'],  # Assuming "開倉日期" is the date column
-    open=new_df['開盤'],    # Assuming "開盤" is the opening price column
-    high=new_df['最高'],    # Assuming "最高" is the highest price column
-    low=new_df['最低'],     # Assuming "最低" is the lowest price column
-    close=new_df['收盤'],    # Assuming "收盤" is the closing price column
-    increasing_line_color='red',
-    decreasing_line_color='green')])
-
-fig.update_layout(title_text='台指期貨月Ｋ線圖')  # Set the title
-fig.show()
-import plotly.graph_objects as go
-
-# Assuming you have the 'new_df' DataFrame with the calculated values
-
-fig = go.Figure(data=[go.Candlestick(
-    x=new_df['開倉日期'],  # Assuming "開倉日期" is the date column
-    open=new_df['開盤'],    # Assuming "開盤" is the opening price column
-    high=new_df['最高'],    # Assuming "最高" is the highest price column
-    low=new_df['最低'],     # Assuming "最低" is the lowest price column
-    close=new_df['收盤'],    # Assuming "收盤" is the closing price column
-    increasing_line_color='red',
-    decreasing_line_color='green')])
-
-fig.update_layout(title_text='台指期貨周Ｋ線圖')  # Set the title
-fig.show()
-
-fig.update_layout(title_text='台指期貨周Ｋ線圖')  # Set the title
-fig.show()
