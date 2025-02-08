@@ -1,3 +1,5 @@
+#To trigger GAS web app to write data from weekly to 周 sheet of 關卡價
+
 import requests
 
 def trigger_gas_webapp():
