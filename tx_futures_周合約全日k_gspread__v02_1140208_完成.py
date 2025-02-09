@@ -236,6 +236,7 @@ for index, row in new_df.iterrows():
 new_df.head()
 
 # Calculate values for the new columns after extracting data from df
+new_df['cost'] = new_df['cost'].astype(float)  # Change data type to float
 for index, row in new_df.iterrows():
     new_df.loc[index, 'span'] = row['最高'] - row['最低']  # Calculate span
     new_df.loc[index, 'cost'] = (row['最高'] + row['最低']) / 2  # Calculate cost
