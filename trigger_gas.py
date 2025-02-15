@@ -1,4 +1,4 @@
-#To trigger GAS web app to write data from weekly to 周 sheet of 關卡價
+#To trigger GAS web app to write data From weekly, weeklyAD, monthly and monthlyAD sheet To 周, 周(全), 月 and 月(全) sheet of 關卡價 spreadsheet
 
 import requests
 
