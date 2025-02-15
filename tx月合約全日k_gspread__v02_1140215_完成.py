@@ -353,7 +353,3 @@ worksheet.clear()
 
 # Write the DataFrame to the sheet
 set_with_dataframe(worksheet, new_df2)
-
-if __name__ == "__main__":
-    trigger_gas_webapp()
-
