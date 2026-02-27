@@ -37,7 +37,7 @@ jobs:
         run: python tx月合約k_gspread_v02_1140209完成.py
 
       - name: Run forth Python Script
-        run: python tx月合約全日k_gspread__v02_1140215_完成.py
+        run: python tx_月合約全日k_gspread__v04_1150227editting_完成_註解.py
 
       - name: Install dependencies
         run: pip install requests
