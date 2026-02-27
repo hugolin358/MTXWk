@@ -27,7 +27,7 @@ Original file is located at
 # ============================================================
 # 步驟 1：安裝 FinMind 並下載台指期（TX）日線資料
 # ============================================================
-!pip install finmind
+
 
 from FinMind.data import DataLoader
 
@@ -212,7 +212,7 @@ new_df2
 #   - gspread：操作 Google Sheets API
 #   - gspread_dataframe：將 pandas DataFrame 直接寫入 Google Sheets
 # ============================================================
-!pip install --upgrade gspread pandas gspread_dataframe
+
 
 """API key.json store in drive and shareed for downloading to Colad VM temperially by url, which doesn't go through drive authentication"""
 
